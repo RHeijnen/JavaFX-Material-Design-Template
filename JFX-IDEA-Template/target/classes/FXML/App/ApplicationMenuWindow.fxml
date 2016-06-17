@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #E3F2FD;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.ApplicationMenuView">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane style="-fx-background-color: #2196F3;" GridPane.columnSpan="13">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="CloseFunction" fitHeight="46.0" fitWidth="81.0" onMouseClicked="#CloseFunction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7">
+               <image>
+                  <Image url="@../../IMG/window-close.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <GridPane prefHeight="57.0" prefWidth="400.0" style="-fx-background-color: #2196F3;" GridPane.columnSpan="13" GridPane.rowIndex="1">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button id="MatDesign" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#HomeFunction" prefHeight="35.0" prefWidth="133.0" stylesheets="@../../CSS/ViewCSS.css" text="Home" underline="true">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../IMG/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+        </Button>
+            <Button id="MatDesign" mnemonicParsing="false" onAction="#AboutFunction" prefHeight="35.0" prefWidth="133.0" stylesheets="@../../CSS/ViewCSS.css" text="About" GridPane.columnIndex="2">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../IMG/information-outline.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </GridPane>           <!-- edge to edge removes scroll borders -->
+      <ScrollPane id="scroll-pane" prefHeight="200.0" prefWidth="200.0" styleClass="edge-to-edge" stylesheets="@../../CSS/ViewCSS.css" GridPane.columnIndex="1" GridPane.columnSpan="11" GridPane.rowIndex="4" GridPane.rowSpan="6">
+         <content>
+            <GridPane prefHeight="448.0" prefWidth="319.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="0.0" prefWidth="0.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="311.0" minWidth="10.0" prefWidth="311.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="0.0" prefWidth="0.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button id="MatDesign" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#openAutomation" prefHeight="50.0" prefWidth="304.0" stylesheets="@../../CSS/ViewCSS.css" text="Button 1" GridPane.columnIndex="1">
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </padding>
+                     <GridPane.margin>
+                        <Insets bottom="6.0" left="11.0" right="11.0" top="6.0" />
+                     </GridPane.margin></Button>
+                  <Button id="MatDesign" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@../../CSS/ViewCSS.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                      <padding>
+                          <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                      </padding>
+                      <GridPane.margin>
+                          <Insets bottom="6.0" left="11.0" right="11.0" top="6.0" />
+                      </GridPane.margin></Button>
+                  <Button id="MatDesign" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@../../CSS/ViewCSS.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                      <padding>
+                          <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                      </padding>
+                      <GridPane.margin>
+                          <Insets bottom="6.0" left="11.0" right="11.0" top="6.0" />
+                      </GridPane.margin></Button>
+                  <Button id="MatDesign" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@../../CSS/ViewCSS.css" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                      <padding>
+                          <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                      </padding>
+                      <GridPane.margin>
+                          <Insets bottom="6.0" left="11.0" right="11.0" top="6.0" />
+                      </GridPane.margin></Button>
+                  <Button id="MatDesign" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@../../CSS/ViewCSS.css" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                      <padding>
+                          <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                      </padding>
+                      <GridPane.margin>
+                          <Insets bottom="6.0" left="11.0" right="11.0" top="6.0" />
+                      </GridPane.margin></Button>
+                  <Button id="MatDesign" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@../../CSS/ViewCSS.css" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                      <padding>
+                          <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                      </padding>
+                      <GridPane.margin>
+                          <Insets bottom="6.0" left="11.0" right="11.0" top="6.0" />
+                      </GridPane.margin></Button>
+                  <Button id="MatDesign" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@../../CSS/ViewCSS.css" text="Decorator" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                      <padding>
+                          <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                      </padding>
+                      <GridPane.margin>
+                          <Insets bottom="6.0" left="11.0" right="11.0" top="6.0" />
+                      </GridPane.margin></Button>
+                  <Button id="MatDesign" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@../../CSS/ViewCSS.css" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                      <padding>
+                          <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                      </padding>
+                      <GridPane.margin>
+                          <Insets bottom="6.0" left="11.0" right="11.0" top="6.0" />
+                      </GridPane.margin></Button>
+                  <Button id="MatDesign" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@../../CSS/ViewCSS.css" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                      <padding>
+                          <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                      </padding>
+                      <GridPane.margin>
+                          <Insets bottom="6.0" left="11.0" right="11.0" top="6.0" />
+                      </GridPane.margin></Button>
+               </children>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Label fx:id="scene_DescriptionLabel" GridPane.columnIndex="2" GridPane.columnSpan="9" GridPane.rowIndex="11" GridPane.rowSpan="2" />
+   </children>
+</GridPane>
